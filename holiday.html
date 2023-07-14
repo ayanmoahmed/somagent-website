@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            background-color:gainsboro;
+        }
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif 'Times New Roman', Times, serif;
+    text-decoration: none;
+    list-style-type: none;
+    scroll-behavior: smooth;
+    border: none;
+    outline: none;
+     @media screen {
+        min-height:min-content;
+     }
+        }
+        :root{
+    --bg-color:#fff;
+    --text-color:#221314;
+    --second-color:#5a7184;
+    --main-color:#9b9aa5;
+    --big-font:6rem;
+    --h2-font:3rem;
+    --p-font:1.1rem; 
+    
+}
+.feature-content{
+             display: grid;
+            text-align: center;
+            align-items:center;
+            grid-template-columns: repeat(auto-fit,minmax(150px,auto));
+            gap: 3rem; 
+            
+        }
+        h3{
+            text-align: center;
+            margin-bottom: 30px;
+            margin-top: 20px;
+            color: blueviolet;
+        }
+          /* h6{
+            margin-top: 0px; 
+        }  */
+        .row-img{
+            overflow: hidden;
+            /* width: 100px;
+            height: 100px; */
+            margin: 0 auto;
+            margin-bottom: 30px;
+            border-radius: 50%;
+            cursor: pointer;
+            justify-content: space-evenly;
+
+            display: block;
+    width: 150px; height: 150px;
+    object-fit: cover;
+    border:4px solid #726a95;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+
+        }
+        .row-img img{
+             /* width: 200px; */
+             /* display: block inline;  */
+    transition: trsnform; 
+    /* display: block; */
+    width: 150px; height: 150px;
+    object-fit: fill;
+    border:4px solid #726a95;
+    border-radius: 20%;
+    margin: 0 auto; 
+            
+        } 
+        .row-img img:hover{
+            transform: scale(1.5);
+        }
+        
+    .holiday{
+        display: grid;
+        gap: 9rem;
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+    }
+    .holiday-img img{
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+    
+        .holiday-text h5{
+            font-size: 22px;
+            font-weight: 600;
+            letter-spacing: 6px;
+            margin-bottom: 20px;
+            color: var(--main-color);
+            text-transform: uppercase;
+        }
+        .holiday-text h2{
+            font-size: var(--h2-font);
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 25px;
+            color: white;
+        }
+        .holiday-text p{
+            font-size: var(--p-font);
+            font-weight: 500;
+            line-height: 30px;
+            margin-bottom: 35px;
+        }
+          .center-text h2{
+            text-align: center;
+        }
+          
+         .culture{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            align-items: center;
+            gap: 9rem;
+         }
+         .culture-img img{
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+         }
+         .culture-text h5{
+            font-size: 22px;
+            font-weight: 600;
+            color: var(--main-color);
+            text-transform: uppercase;
+            letter-spacing: 6px;
+            margin-bottom: 20px;
+         }
+         .culture-text h2{
+            font-size: var(--h2-font);
+            font-weight: 800;
+            line-height: 1.5;
+            margin-bottom: 20px;
+         }
+         .culture-text p{
+            font-size: var(--p-font);
+            font-weight: 500;
+            line-height: 30px;
+            color: bisque;
+            margin-bottom: 40px;
+         }
+         .holiday-btn{
+            display: inline-block;
+    padding: 15px 40px;
+    background: lightseagreen;;
+    color:rgb(38, 19, 216);
+    font-size: 15px;
+    font-weight: 600;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: all .50s ease;
+    cursor: pointer;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 10px;
+         }
+         
+         .copyright{
+        text-align: center;
+        font-weight: 200;
+     }
+     /* .joyfull{
+        display: grid;
+        gap: 9rem;
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+     } */
+     .hotel{
+        display: grid;
+        gap: 9rem;
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+     }
+     .hotel-img img{
+     width: 100%;
+        height: auto;
+        border-radius: 10px;}
+        .restourant{
+            display: grid;
+        gap: 9rem;
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+        }
+        .restourant-img img{
+            width: 100%;
+        height: auto;
+        border-radius: 10px;}
+        
+
+
+     
+  
+
+
+    
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>new adventures</title>
+    <link rel="stylesheet"
+     href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,300;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <h3>enjoy your time</h3>
+    <section class="features">
+        <div class="feature-content">
+            
+            
+            <div class="row">
+                <div class="row-img">
+                    <img src="beach view.gif"  alt="">
+                    <!-- <h6>bedroom</h6> -->
+
+                </div>
+                
+                
+              
+            </div>
+            <div class="row">
+                <div class="row-img">
+                    <img src="Somali-2-810x456.jpg"  alt="">
+                </div>
+                
+        </div>
+        <div class="row">
+        <div class="row-img">
+            <img src="p2.jpg"  alt="">
+           
+        </div>
+        </div>
+        
+        <div class="row">
+        <div class="row-img">
+            <img src="p4.gif"  alt="">
+
+        </div>
+        </div>
+        <div class="row">
+        <div class="row-img">
+            <img src="p3.gif"  alt="">
+            
+        </div>
+        </div>
+        
+        <div class="row-img">
+            <img src="grl.gif"  halt="">
+
+        </div>
+       
+</div>
+    </section>
+    <section class="holiday">
+        <div class="holiday-img">
+            <img src="lido.gif" alt="">
+        </div>
+        <div class="holiday-text">
+            <h5>lido beach somalia</h5>
+            <h2>enjoy your holiday</h2>
+            <p>Lido Beach has seafood restaurants, hotels, and parks. 
+                The Somali diaspora plays an important role in recovering Mogadishu,
+                 building new luxury downtown and beaches and restaurants,
+                  and many more that attract international tourists.
+                 There are many newly established businesses there.</p>
+                 <a href="culture.html" class="holiday-btn">read more</a>
+
+        </div>
+        
+       
+    </section >
+    <div class="copyright">
+        <p>copyright 2023 by group H all rights reserved</p>
+
+    </div>
+ <script src="js/script.js"></script>
+</body>
+</html>
+
+

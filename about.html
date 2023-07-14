@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+body{
+    background-color:lightslategray;
+    font-family: "Century Gothic";
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.title{
+    text-align: center;
+    text-transform: capitalize;
+    color:brown;
+    margin: 10px 0;
+    position: relative;
+}
+
+.title::after{
+    content: "";
+    position: absolute;
+    width: 20%; height: 2px;
+    background-image: linear-gradient(to left, transparent 5%, #726a95);
+    bottom: -10px; left: 50%;
+    transform: translate(-50%);
+}
+
+.team-row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 40px 0;
+}
+
+.member{
+    flex: 250px;
+    margin: 20px;
+    text-align: center;
+    padding: 20px 10px;
+    cursor: pointer;
+    max-width: 300px;
+    transition: all 0.3s;
+}
+
+.member:hover{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transform: translateY(-20px);
+}
+
+.member img{
+    display: block;
+    width: 150px; height: 150px;
+    object-fit: cover;
+    border:4px solid #726a95;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.member h2{
+    text-transform: uppercase;
+    font-size: 24px;
+    color: #726a95;
+    margin: 15px 0;
+}
+
+.member p{
+    font-size: 20px;
+    color:palevioletred;
+    line-height: 1.2;
+    text-align: justify;
+    margin-left: 20px;
+}
+
+.row{margin-left: 275px;
+    margin-bottom: 20px;
+    display: flex;
+    position: fixed;
+    height: 45px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: xx-large;
+    
+    
+}
+body{
+    background-color: rgb(178, 230, 173);
+}
+.footer{
+        text-align: center;
+        font-weight: 200;
+     }
+
+
+
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>our team page</title>
+</head>
+<body>
+    <section>
+        <h1 class="title">Project Team</h1>
+        <div class="team-row">
+            <div class="member">
+                 <img src="jam.gif" alt="">
+                <h2>amran mohamud</h2>
+                <p>ID:c622026 <br> </p>
+                <p>role: <br></p>
+            </div>
+            <div class="member">
+                <img src="jam.gif" alt="">
+                <h2>mohamed</h2>
+                <p>ID:</p>
+                <p>ROLE:</p>
+            </div>
+            <div class="member">
+                <img src="jam.gif" alt="">
+                <h2>yasin</h2>
+                <p>ID:</p>
+                <p>ROLE:</p>
+            
+            </div>
+            <div class="member">
+                <img src="jam.gif" alt="">
+                <h2>mohamed</h2>
+                <p>ID:</p>
+                <p>ROLE:</p>
+                 
+            </div>
+            <div class="member">
+                <img src="jam.gif" alt="">
+                <h2>ayan shire</h2>
+                <p>ID:C6220026 <br> </p>
+                <p>ROLE: <br></p>
+            </div>
+            
+    
+        </div>
+        <div class="footer">
+            <footer>
+                &copy;<i>som <b>agent</b></i> Privacy and policy all reserved
+            </footer>
+        </div>
+    </section>
+    <div class="footer">
+</body>
+</html>

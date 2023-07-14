@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            background-color:lightsalmon;
+        }
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif 'Times New Roman', Times, serif;
+    text-decoration: none;
+    list-style-type: none;
+    scroll-behavior: smooth;
+    border: none;
+    outline: none;
+}
+ :root{
+    --bg-color:#fff;
+    --text-color:#221314;
+    --second-color:#197ccc;
+    --main-color:#6e54fa;
+    --big-font:6rem;
+    --h2-font:3rem;
+    --p-font:1.1rem; }
+
+
+         .navbar{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+        }
+        .navbar a{
+    color:black;
+    font-size: var(--p-font);
+    font-weight:500 ;
+    margin: 15px 25px;
+    transition: all .50s ease;
+    text-align: center;
+    align-items: center;
+
+    
+}
+.navbar a:hover{
+    color: rgb(206, 112, 112);
+}
+ .footer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,auto));
+  
+    gap: 2rem;
+   
+}
+.footer-box{
+    display: flex;
+    flex-direction: column;
+      margin-top: 30px;  
+     justify-content: space-evenly;
+     padding: auto;
+}
+.footer-box h3{
+    font-size: 20px;
+    font-weight: 600;
+     /* justify-content: space-evenly;  */
+     margin-bottom: 10px; 
+}
+.footer-box a{
+    color: purple; 
+    margin-bottom: 0.08rem;
+    transition: all.50s ease;
+}
+.footer-box a:hover{
+   transform: translate(-5px);
+    color: palevioletred;
+} 
+.social a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 45px;
+    background: rgb(114, 114, 168);
+    color: var(--bg-color);
+    font-size: 20px;
+    border-radius: 50%;
+    margin-right: 8px;
+    transition: transform;
+}
+.copyright p{
+    text-align:center;
+    padding: 20px;
+    font-size: 15px;
+    margin-top: 10%;
+}
+
+
+h4{
+    text-align:center;
+    font-style: italic;
+}
+h5{
+    font-style: italic;
+}
+.container :hover{
+    background: transparent;
+}
+.holiday{
+    display: inline-block;
+    padding: 15px 40px;
+     background: lightseagreen;; 
+    color:green;
+    font-size: 15px;
+    font-weight: 600;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: all .50s ease;
+    cursor: pointer;
+    
+    /* align-items:self-start; */
+    margin-left: 10px;
+    margin-top: 10px;
+    /* clear: left;
+    float: left;
+    text-align: right; */
+}
+    /* margin-top: 20px; */
+    .holiday :hover{
+        transform: translate(-5px);
+        color: rgb(197, 18, 77);
+        
+    }
+
+.culure{
+    display: inline-block;
+    padding: 15px 40px;
+    background: lightseagreen;
+    color:green;
+    font-size: 15px;
+    font-weight: 600;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: all .50s ease;
+    cursor: pointer;
+    align-items:flex-start;
+    margin-left: 10px;
+    /* clear: left;
+    float: left;
+    text-align: right; */
+    /* margin-top: 20px; */
+
+}
+.culure :hover{
+    transform: translate(-5px);
+        color: rgb(197, 18, 77);
+}
+.booking{
+    display: inline-block;
+    padding: 15px 40px;
+    background: lightseagreen;;
+    color:green;
+    font-size: 15px;
+    font-weight: 600;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: all .50s ease;
+    cursor: pointer;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 10px;
+    /* clear: left;
+    float: left;
+    text-align: right; */
+
+}
+.booking :hover{
+    transform: translate(-5px);
+        color: rgb(197, 18, 77);
+}
+h6{
+    margin-top: 30px;
+    margin-left: 7%;
+}
+
+
+
+    
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>helping page</title>
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,300;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+  
+</head>
+<body>
+    <div class="container">
+    <h4>your happiness is our priority</h4>
+    <div class="holiday">
+        <a href="holiday.html">holiday activities</a>
+    </div><br><br>
+    <div class="culure">
+        <a href="culture.html">learn more about culture</a>
+    </div>
+    <h6>To Explore more</h6>
+    <div class="booking">
+        <a href="booking.html">book now</a>
+
+    </div>
+</div>
+    <section class="footer">
+        <div class="footer-box">
+            <h3>services</h3>
+            <a href="#">online tickets</a>
+            <a href="#">offline tickets </a>
+            <a href="#">nice flights</a>
+            <a href="#">vaccations</a>
+        </div>
+        <div class="footer-box">
+            <h3>about</h3>
+            <a href="#">holidays & cultures</a>
+            <a href="#">beautifull sites</a>
+            <a href="#">surveys</a>
+            <a href="#">picnics</a>
+
+
+        </div>
+        <div class="footer-box">
+            <h3>help</h3>
+            <a href="#">contact us</a>
+            <a href="#">faqs</a>
+    </div>
+    <div class="footer-box">
+        <h3>social</h3>
+        <div class="social"></div>
+        <a href="#"><i class="ri-twitter-fill"></i> &nbsp; twitter</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="#"><i class="ri-instagram-line"></i> &nbsp; intagram</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="#"><i class="ri-facebook-line"></i>  &nbsp;facebook</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        
+    </div>
+        
+    </div>
+    </section>
+    <div class="copyright">
+        <p>copyright 2023 by group H all rights reserved</p>
+
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
